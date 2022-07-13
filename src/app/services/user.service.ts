@@ -30,4 +30,20 @@ export class UserService {
     }
     return this.http.post<IRegisterResponse>(url, body);
   }
+
+  activateAccount(token: string) : Observable<any> {
+    let url = 'http://localhost:8080/user/activate'; // Api register backend user 3 parameter (email, password, name)
+    let body = {
+      token: token
+    }
+    return this.http.post<any>(url, body);
+  }
+
+  resendActivationEmail(token: string) {
+    let url = 'http://localhost:8080/user/resend-activation-email'; // Api register backend user 3 parameter (email, password, name)
+    let body = {
+      token: token
+    }
+    return this.http.post<any>(url, body);
+  }
 }

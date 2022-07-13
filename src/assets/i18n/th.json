@@ -1,0 +1,19 @@
+{
+    "test.message": "ข้อความทดสอบ",
+    "header": {
+        "menu": {
+            "dashboard": "หน้าแรก",
+            "chat": "แชท",
+            "logout": "ออกจากระบบ"
+        }
+    },
+    "User": {
+        "activate": {
+            "already": "บัญชีของคุณได้เปิดการใช้งานอยู่แล้ว",
+            "token": {
+                "expire": "Token หมดอายุ"
+            }
+        }
+    }
+     
+}
